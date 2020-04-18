@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+    /* opacity: 0.8; */
+}
+
+.nav {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    height: 80px;
+    margin: 5px 0;
+    display: inline-block;
+    background-color: rgb(28, 26, 53);
+    color: white;
+    line-height: 90px;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    text-align: center;
+    transition: 300ms;
+}
+a.active, .nav a:hover {
+    background-color: white;
+    color: black;
+    width: 80%;
+}
+
+.a {
+    width: 75%;   
+}
+
+.b {
+    width: 70%;   
+   }
+
+.c {
+    width: 65%;   
+   }
+
+.d {
+    width: 70%;   
+   }
+
+
+.content {
+    position: absolute;
+    width: 930px;
+    min-height: 500px;
+    height: auto;
+    right: 0;
+    top: 10%;
+}
+
+.home {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    color: aliceblue;
+    font-family: 'Zilla Slab', serif;
+   }
+
+.home h1 {
+    font-size: 80px;
+    padding-right: 90px;
+    border-bottom: 1px solid white;
+
+}
+
+.home h3 {
+    font-size: 25px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+
+
+ /*.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}*/
+
+.column {
+float: left;
+width: 29%;
+padding:10px 20px 10px 20px;
+margin-left: 10px;
+font-family: 'Dosis', sans-serif;
+  }
+  
+
+.row {
+    margin: 0 10px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+.gallery {
+    float: left;
+    width: 20%;
+    padding:10px 20px 10px 20px;
+    margin-left: 10px;
+  }
+  
+  
+.gallery img {
+    width: 100%;
+    border-radius: 10rem;
+    border: 1px solid #ccc;
+    
+  }
+  
+h2{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Zilla Slab', serif;
+    color: saddlebrown;
+}
+
+.form-style-9{
+	max-width: 500px;
+	background: #FAFAFA;
+	padding: 40px;
+    margin: 10px auto;
+    margin-top: 500px;
+    margin-bottom: 150px;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+    border: 6px solid #305A72;
+    position: relative;
+}
+.form-style-9 ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+}
+
+.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+    width: 47.5%;
+    margin: 5px;
+    border-radius: 0.7rem;
+}
+.form-style-9 ul li .field-full{
+    width: 100%;
+    margin: 2px;
+    border-radius: 0.7rem;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+    height: 100px;
+    border-radius: 0.7rem;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+    border: 1px solid #17445E;
+    border-radius: 0.7rem;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+    font: 16px 'Zilla Slab', serif;
+    margin-left: 180px;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: rgb(15, 34, 97);
+}
+
+form p{
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    color: rgb(15, 34, 97);
+}
+
+#footer {
+    background-color: white;
+    margin: 10px;
+    height: 110px;
+    clear: both;
+    color: royalblue;
+    text-align: center;
+    padding: 15px;
+  } 
+
+#footer ul{
+    margin: 10px;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#footer ul li{
+    display: inline;
+}
